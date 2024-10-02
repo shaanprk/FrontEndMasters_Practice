@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 35px;
+}
+
+.game {
+    width: 350px;
+    height: 500px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: auto;
+    column-gap: 15px;
+    padding-bottom: 15px;
+}
+
+.char {
+    display: flex;
+    font-size: 30px;
+    border: 3px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}

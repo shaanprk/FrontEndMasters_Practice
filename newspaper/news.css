@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "brand-header brand-header brand-header"
+        "nav-links nav-links nav-links"
+        "story-1 story-2 story-3"
+        "story-4 story-5story-5"
+}
+
+.brand-header {
+    text-align: center;
+    grid-area: brand-header;
+    margin: 40px;
+}
+
+.brand {
+    font-weight: normal;
+    font-size: 380%;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    grid-area: nav-links;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.section-link {
+    text-decoration: none;
+    color: gray;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.story {
+    outline: 3px solid black;
+    max-width: 100%;
+}
+
+.article-title {
+    margin: 25px;
+}
+
+.article-text {
+    margin: 10px;
+}
+
+.story-1 {
+    grid-area: story-1;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+}
+
+.story-4 {
+    grid-area: story-4;
+}
+
+.story-5 {
+    grid-area: story-5;
+}
+
+.article-title {
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 200%;
+}
+
+.article-img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}

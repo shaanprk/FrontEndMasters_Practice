@@ -1,0 +1,156 @@
+* {
+    box-sizing:border-box;
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #42291c;
+    padding: 10px;
+}
+
+.logo {
+    width: 20%;
+    text-decoration: none;
+    color: #fbf2c0;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.logo-img {
+    width: 20%;
+}
+
+.section-title {
+    color: rgb(134, 111, 81);
+}
+
+body {
+    background-color: #eeefee;
+}
+
+.page {
+    padding: 60px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 20px;
+    grid-template-areas:
+        "items name"
+        "items payment"
+}
+
+.items {
+    grid-area: items;
+}
+
+.name {
+    grid-area: name;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ece1d4;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px lightgray;
+}
+
+.section-title {
+    padding-bottom: 15px;
+}
+
+.input {
+    border: 1.5px solid #42291c;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #ece1d4;
+}
+
+.label {
+    color: rgb(134, 111, 81);
+    font-size: 11px;
+    position: absolute;
+    padding: 0 2px;
+    background-color: #ece1d4;
+    left: 35px;
+}
+
+.name-label {
+    top: 52px;
+}
+
+.card-label {
+    top: 52px;
+}
+
+.ccv-label {
+    top: 95px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+        "quantity item-name price"
+        ". mods .";
+    padding: 10px;
+    border-bottom: 1px solid rgb(134, 111, 81);
+}
+
+.quantity {
+    grid-area: quantity;
+}
+
+.item-name {
+    grid-area: item-name;
+    font-weight: bold;
+}
+
+.mods {
+    grid-area: mods;
+    list-style: none;
+    padding-left: 0;
+    color: rgb(134, 111, 81);
+}
+
+.price {
+    grid-area: price;
+    font-weight: bold;
+}
+
+.costs {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.costs > * {
+    margin: 15px 0;
+}
+
+.right {
+    float: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
